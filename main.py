@@ -76,4 +76,4 @@ def get_companies():
 # Seed the database when the application starts
 if __name__ == '__main__':
     seed_db()  # Seed the database
-    app.run(debug=True)
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
